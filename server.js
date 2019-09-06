@@ -27,7 +27,7 @@ app.get('/', function (req, res) {
 
 //GET callback method to render the html page to add the task
 app.get('/addtask', function (req, res) {
-    res.render('addtask.html');
+    res.render('addtasks.html');
 });
 
 //POST method to handle POST requests from the input field
