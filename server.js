@@ -50,7 +50,7 @@ app.get('/', function (req, res) {
 app.get('/addtasks', function (req, res) {
 =======
 //GET callback method to render the html page to add the task
-app.get('/addtask', function (req, res) {
+app.get('/addtasks', function (req, res) {
 >>>>>>> 8a8f4f885fa971b6fc66e6103d812426e505d0f8
     res.render('addtasks.html');
 });
@@ -103,7 +103,7 @@ app.post('/deletealltasks', function (req, res) {
 });
 
 //Update Task:
-app.get('/updatetask', function (req, res) {
+app.get('/updatetasks', function (req, res) {
     res.render('updatetask.html');
 });
 
