@@ -45,13 +45,13 @@ app.get('/', function (req, res) {
     res.render('index.html');
 });
 
-<<<<<<< HEAD
+
 //GET callback method to render the html page and form to add the task
 app.get('/addtasks', function (req, res) {
 =======
 //GET callback method to render the html page to add the task
 app.get('/addtasks', function (req, res) {
->>>>>>> 8a8f4f885fa971b6fc66e6103d812426e505d0f8
+
     res.render('addtasks.html');
 });
 
@@ -96,7 +96,7 @@ app.post('/deletetaskdata', function (req, res) {
     res.redirect('listtasks'); // redirect the client to list users page
 });
 
-<<<<<<< HEAD
+
 app.post('/deletealltasks', function (req, res) {
     db.collection('tasks').deleteMany({status: 'Completed'});
     res.redirect('listtasks');
@@ -132,4 +132,4 @@ function getNewId() {
 app.listen(8080);
 =======
 app.listen(8080);
->>>>>>> 8a8f4f885fa971b6fc66e6103d812426e505d0f8
+
