@@ -48,7 +48,6 @@ app.get('/', function (req, res) {
 
 //GET callback method to render the html page and form to add the task
 app.get('/addtasks', function (req, res) {
-=======
 //GET callback method to render the html page to add the task
 app.get('/addtasks', function (req, res) {
 
@@ -129,7 +128,5 @@ function getNewId() {
     return (Math.floor(100000 + Math.random() * 900000));
 };
 
-app.listen(8080);
-=======
 app.listen(8080);
 
