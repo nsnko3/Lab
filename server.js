@@ -46,10 +46,10 @@ app.get('/', function (req, res) {
 });
 
 
-//GET callback method to render the html page and form to add the task
-app.get('/addtasks', function (req, res) {
+
+
 //GET callback method to render the html page to add the task
-app.get('/addtasks', function (req, res) {
+app.get('/addtask', function (req, res) {
 
     res.render('addtasks.html');
 });
@@ -102,7 +102,7 @@ app.post('/deletealltasks', function (req, res) {
 });
 
 //Update Task:
-app.get('/updatetasks', function (req, res) {
+app.get('/updatetask', function (req, res) {
     res.render('updatetask.html');
 });
 
@@ -129,4 +129,3 @@ function getNewId() {
 };
 
 app.listen(8080);
-
