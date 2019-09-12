@@ -49,7 +49,7 @@ app.get('/', function (req, res) {
 
 
 //GET callback method to render the html page to add the task
-app.get('/addtask', function (req, res) {
+app.get('/addtasks', function (req, res) {
 
     res.render('addtasks.html');
 });
