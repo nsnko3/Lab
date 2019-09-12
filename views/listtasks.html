@@ -6,10 +6,12 @@
 
     <div class="header">
         <div class="header-right">
-         
+                <img src="TBJ.png">
             <a href="/">Home</a> 
-            <a href="/addtask">Add New Task</a>
+            <a href="/addtasks">Add New Task</a>
             <a href="listtasks">List All Tasks</a>
+            <a href="/deletetask">Delete Tasks</a>
+            <a href="/updatetask">Update Tasks</a>
            
         </div>
      
@@ -20,19 +22,31 @@
 <body>
     </br>
     <h1>
-        <table border = "0" >
+        <table>
             <tr>
-                <th>Name</th>
-                <th>Due Date</th>
-                <th>Description</th>
+                <td>Task Id</td>
+                <td>Task Name</td>
+                <td>Assign To</td>
+                <td>Due Date</td>
+                <td>Status</td>
+                <td>Description</td>
             </tr>
             <% for (let i =0; i< taskdb.length;i++){ %>
                 <tr>
                     <td>
+                        <%= taskdb[i].id %>
+                    </td>
+                    <td>
                         <%= taskdb[i].name %>
                     </td>
                     <td>
+                        <%= taskdb[i].assignto %>
+                    </td>
+                    <td>
                         <%= taskdb[i].due %>
+                    </td>
+                    <td>
+                        <%= taskdb[i].status %>
                     </td>
                     <td>
                         <%= taskdb[i].description %>

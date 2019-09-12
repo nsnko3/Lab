@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+
+<div class="header">
+    <div class="header-right">
+            <img src="TBJ.png">
+<a href="/">Home</a>
+        <a href="/addtasks">Add New Task</a>
+        <a href="/listtasks">List Tasks</a>
+        <a href="/updatetask">Update Tasks</a>
+    
+
+    </div>
+     
+</div>
+</head>
+
+<body>
+        
+    <form action="/deletetaskdata" method="POST">
+        <label><font size="+2"><b>Task ID: </b></font></label>
+        <input type="text" placeholder="Task ID" name="taskId"> </br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="/deletealltasks" method="POST">
+        <label><font size="+2"><b>Delete All Completed Tasks: </b></font></label>
+        <button type="submit">Delete</button>
+    </form>
+</body>
+</html>
